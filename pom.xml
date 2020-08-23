@@ -4,11 +4,19 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
+<<<<<<< HEAD
 	<artifactId>guestbook</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>guestbook</name>
+=======
+	<artifactId>frontend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>frontend</name>
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -28,6 +36,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
@@ -37,10 +46,32 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+=======
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 		</dependency>
 
         <dependency>
 			<groupId>org.springframework.cloud</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
 		</dependency>
         <dependency>
@@ -53,6 +84,30 @@
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+=======
+			<artifactId>spring-cloud-gcp-starter-trace</artifactId>
+		</dependency>
+        <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
+		</dependency>
+        <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-logging</artifactId>
+		</dependency>
+
+        <dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-core</artifactId>
+		</dependency>
+
+        <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-storage</artifactId>
+		</dependency>
+
+
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -66,6 +121,7 @@
 	</dependencies>
 
 	<dependencyManagement>
+<<<<<<< HEAD
                 <dependencies>
                         <dependency>
                                 <groupId>org.springframework.cloud</groupId>
@@ -76,6 +132,18 @@
                         </dependency>
                 </dependencies>
         </dependencyManagement>
+=======
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 
 	<build>
 		<plugins>
@@ -93,7 +161,12 @@
     </configuration>
 </plugin>
 		</plugins>
+<<<<<<< HEAD
 	</build>
 
 
+=======
+        
+	</build>
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 </project>

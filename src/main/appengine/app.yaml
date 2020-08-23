@@ -1,7 +1,16 @@
 runtime: java11
+<<<<<<< HEAD
 service: guestbook-service
+=======
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
 instance_class: B4_1G
 manual_scaling:
   instances: 2
 env_variables:
+<<<<<<< HEAD
   SPRING_PROFILES_ACTIVE: cloud
+=======
+  SPRING_PROFILES_ACTIVE: cloud
+  # REPLACE PROJECT_ID with your project ID!
+  MESSAGES_ENDPOINT: https://guestbook-service-dot-qwiklabs-gcp-02-03f59d3b50b6.appspot.com/guestbookMessages
+>>>>>>> 78afcce4328087e6f8b3b34b68468b49d614d64b
